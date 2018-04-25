@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onItemClick">
+
+    <TextView
+        android:id="@+id/characterLevelTextViewId"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterClassTextViewId"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/characterNameTextViewID"
+        app:layout_constraintStart_toEndOf="@+id/characterLevelTextViewId"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/characterNameTextViewID"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/characterClassTextViewId"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.constraint.ConstraintLayout>
